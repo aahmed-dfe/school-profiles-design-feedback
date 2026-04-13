@@ -29,9 +29,9 @@ Both applications duplicate Searching - via a `Lucene` implementation instead of
 
 - Create a Search abstraction for keyword search e.g. `ISearchServiceAdaptor`. Create a `Search.Contracts` package
 - Create implementation for `LuceneSearchServiceAdaptor` -> `Search.Abstractions`
-- Create a composition root that implements this
-- Consume this in `Sector.Infrastructure` and `Public.Infrastructure`
-- Creating another implementation for PostGres text search can be worked on
+- Create a composition root that allows registration of e.g. `AddLuceneSearch(this IServiceCollection services)`
+- Consume `ISearchServiceAdaptor` in `Sector.Infrastructure` and `Public.Infrastructure`
+- Creating another implementation for PostGres text search can be worked on, by backing onto an abstraction - swapping in the future is easier.
 
 See library built for [Azure AISearch example](https://github.com/DFE-Digital/infrastructure-cognitive-search).
 
