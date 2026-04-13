@@ -13,15 +13,15 @@ Duplication of behaviour and modelling decisions increases maintenance cost, inc
 `GSII`
 
 - Search
-  - For a school by name or UniqueReferenceNumber
-  - For similar schools to a school. Filterable and sortable
+  - For a school by name or UniqueReferenceNumber(URN)
+  - For similar schools to a school. filterable and sortable
 - Measure
-  - Get a measure(s) for schools for recent academic year(s) - filter for given cohorts (Girls, Boys) and scopes (National, LA). These measures should be comparable and sometimes, aggregated from prior years. There is sometimes a need `NumberOfPupils` to retrieve `RelatedMeasures` to a measure.
+  - Get a measure(s) for schools for recent academic year(s) - filter the requested measure for given cohort (Girls, Boys) and a given scope(s) (National, LA). These measures should be comparable. Sometimes they are `DerivedMeasures` which are aggregated or calculations applied from across academic years. There is sometimes a need e.g. `NumberOfPupils` to retrieve `RelatedMeasures` to a `Measure`
 
 `sip-public`
 
 - Search
-  - For a school by name. Filterable
+  - For a school by name. filterable
   - For a school by postcode
   - For a school by council
 - Measure
