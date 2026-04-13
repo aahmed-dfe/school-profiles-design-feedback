@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- White background -->
+  <rect width="100%" height="100%" fill="white"/>
+
+  <!-- Title -->
+  <text x="300" y="40"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="26"
+        font-weight="bold"
+        fill="#000">
+    Test Pyramid
+  </text>
+
+  <!-- Unit Tests (base) -->
+  <polygon points="100,400 500,400 400,300 200,300"
+           fill="#4CAF50"/>
+  <text x="300" y="360"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="18"
+        fill="white"
+        font-weight="bold">
+    Unit Tests
+  </text>
+  <text x="300" y="385"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="14"
+        fill="white">
+    Many · Fast · Isolated
+  </text>
+
+  <!-- Integration Tests (middle) -->
+  <polygon points="200,300 400,300 350,220 250,220"
+           fill="#FFB300"/>
+  <text x="300" y="265"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16"
+        fill="black"
+        font-weight="bold">
+    Integration Tests
+  </text>
+  <text x="300" y="285"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        fill="black">
+    Fewer · Slower
+  </text>
+
+  <!-- End-to-End Tests (top) -->
+  <polygon points="250,220 350,220 300,150"
+           fill="#E57373"/>
+  <text x="300" y="195"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="14"
+        fill="black"
+        font-weight="bold">
+    UI / E2E Tests
+  </text>
+  <text x="300" y="212"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="12"
+        fill="black">
+    Few · Slow · Brittle
+  </text>
+
+</svg>

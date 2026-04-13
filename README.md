@@ -55,7 +55,7 @@ In the tests symptoms of these issues show as large suites of UI Tests as a prop
 
 This implies the test pyramid is not being applied effectively. UI tests are valuable, but they should not be the primary mechanism for validating business logic. This is what unit testing should fulfil. We have seen other x-data projects find large suites of UI tests difficult to maintain and a lack of granularity that unit and integration tests provide confidence with.
 
-![test-pyramid](./test-pyramid.png)
+![test-pyramid](./test-pyramid.svg)
 
 For any design, we should be able to unit test at build giving us a high degree in confidence in behaviour and abstraction implementations. We can use `TestDoubles` in the form of Mocking libraries (`Moq`) and Fakes (`Bogus`) to verify behaviour in these units by substituting dependencies and exercising contracts. This should include;
 
