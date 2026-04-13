@@ -27,7 +27,7 @@ Both applications duplicate Searching - via a `Lucene` implementation instead of
 
 ### Search - suggestion
 
-- Create a Search abstraction for keyword search e.g. `ISearchServiceAdaptor`. Create a `Search.Contracts` package
+- Create a Search abstraction for keyword search e.g. `ISearchServiceAdaptor`. Create a `Search.Contracts` semantically versioned NuGet package
 - Create implementation for `LuceneSearchServiceAdaptor` -> `Search.Abstractions`
 - Create a composition root that allows registration of e.g. `AddLuceneSearch(this IServiceCollection services)`
 - Consume `ISearchServiceAdaptor` in `Sector.Infrastructure` and `Public.Infrastructure`
