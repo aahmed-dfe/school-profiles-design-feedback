@@ -182,3 +182,36 @@ How this might look where `IPresentationService` request which measures they req
     Infrastructure
       DfE.SchoolProfiles.GSII.Infrastructure.csproj
     ```
+
+    or at a vertical slices feature level
+
+    ```text
+    GetMeasures/
+      GSII.GetMeasures.csproj
+      Application/
+        UseCases/
+          GetMeasuresUseCase
+          GetMeasures.Request
+          GetMeasures.Response
+        Repositories/
+          IMeasureRepository
+      Infrastructure/
+        MeasureRepository
+      Domain
+        IMeasureIdentity
+        IMeasureValue
+    SearchByName
+      UseCases/
+
+    Contracts.CrossCutting/
+      IMapper
+      ILogger
+    Contracts.Application
+      IUseCase
+      IUseCaseRequest
+    Contracts.Infrastructure
+      IReadOnlyRepository
+      
+
+
+    ```
