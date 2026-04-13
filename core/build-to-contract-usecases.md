@@ -16,7 +16,7 @@ Clean architecture promotes UseCases e.g. `IUseCase` as it make application inte
 
 - Without a behaviour abstraction
   - Consumers of the Services may have to consume large amounts of Services to stitch together data required
-  - Consumders are bound to a service contract encoding scope and measure, preventing substitution or decoration at a behavioural level
+  - Consumers are bound to a service contract encoding scope and measure, preventing substitution or decoration at a behavioural level
 
  so cannot be substituted or decorated. This leads to testing e.g. Mocking or observing on the contract cannot be done, or requiring a Fakes approach.
 
