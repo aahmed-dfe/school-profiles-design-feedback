@@ -64,7 +64,7 @@ For any design, we should be able to unit test at build giving us a high degree 
   - ApplicationServices
   - DomainServices
 - Infrastructure
-  - implementations of Application Repositories/Services (Infrastructure)
+  - implementations of Application Repositories/Services
   - Shared Infrastructural implementations (ISqlQueryReader -> DapperQueryReader, ISearchIndexAdapter -> PostgresSearchIndexAdaptor)
 - Presentation
   - Controllers (Presentation)
