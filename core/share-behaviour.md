@@ -16,7 +16,7 @@ Duplication of behaviour and modelling decisions increases maintenance cost, inc
   - For a school by name or UniqueReferenceNumber
   - For similar schools to a school. Filterable and sortable
 - Measure
-  - Get a measure(s) for schools for recent academic year(s) - filter for given cohorts (Girls, Boys) and scopes (National, LA). These measures should be comparable and sometimes, aggregated from other data-points.
+  - Get a measure(s) for schools for recent academic year(s) - filter for given cohorts (Girls, Boys) and scopes (National, LA). These measures should be comparable and sometimes, aggregated from prior years. There is sometimes a need `NumberOfPupils` to retrieve `RelatedMeasures` to a measure.
 
 `sip-public`
 
