@@ -18,7 +18,7 @@ Both applications use MVC and Razor `(.cshtml)` to render views. Both applicatio
 
 ## Suggestions
 
-1) Create a shared Views/ViewModel versioned NuGet package `DfE.SchoolProfiles.Shared.Presentation`. Move shared ViewModels, ViewComponents, TagHelpers, and supporting partials into a shared package.
+1) Create a shared ViewComponents versioned NuGet package e.g. `DfE.SchoolProfiles.Shared.Presentation`. Move shared ViewModels, ViewComponents, TagHelpers, and supporting partials into a shared package.
 
 This could become a broader DfE package for other `dotnet` applications. It could consume the `GovUK.AspNetCore` library to generate these views, or use raw html, and construct composite Views used across DfE applications.
 
