@@ -22,7 +22,7 @@ Clean architecture promotes UseCases e.g. `IUseCase` as it make application inte
 
 - Services expose data structures shaped by persistence concerns rather than modelling application behaviour explicitly.
 
-- The system exhibits low extension locality: adding a new measure or scope requires changes across controllers, services, interfaces, dependency registration, and DTOs. We know that more measures will need to be displayed.
+- The system exhibits low extension locality: adding a new measure or scope requires changes across controllers, services, interfaces, dependency registration, and DTOs. We know that more measures will need to be displayed across both services - so the design should be open to extension to aid this need.
 
 ## Examples
 
