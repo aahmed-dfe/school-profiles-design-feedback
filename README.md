@@ -42,6 +42,8 @@ The first output `v0.1` covers high-level application design improvements.
   - [Share infrastructure](./infrastructure/share-infrastructure.md)
 - Presentation
   - [Share presentation components](./design/presentation/share-presentation.md)
+- Data
+  - I have avoided the data-ingestion pipeline as this appears duplicated, unclear at present, and, as the application(s) are adopting clean architecture, an assumption is made that a data-store is *hydrated* and read behind an abstraction. It would appear that consideration should be made to share data-ingestion as [SAPData project is a project fork](https://github.com/DFE-Digital/sap-sector/commit/221ca0cbabe6c3051745d4e89cee1afa19a40963) in use across both projects with minor tweaks.
 
 There are design issues across both repositories which should be addressed to avoid long-term maintenance burdens and increase testability. These surface in forms of duplication, lack of abstraction and violations or at-risk areas against SOLID principles.
 
